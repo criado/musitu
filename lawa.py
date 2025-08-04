@@ -1,5 +1,4 @@
 
-
 nanpa_sitelen=133
 k = 12
 # sitelen 0... (k-1)*(k-1)-1 li lon leko
@@ -37,3 +36,8 @@ ale= set()
 for l in lipu:
   ale= ale.union(set(l))
 assert(len(ale)== nanpa_sitelen)
+
+import sitelen
+
+for i in range(nanpa_sitelen):
+  sitelen.o_sitelen_e_lipu(lipu[i], i)
