@@ -2,6 +2,7 @@ import math
 import os
 from PIL import Image
 import cairosvg
+import random
 
 # nanpa sitelen
 
@@ -174,6 +175,8 @@ nimi = [
 ("pali", 6),
 ####
 ]
+
+random.shuffle(nimi)
 
 # lipu sin
 canvas_size = 850
