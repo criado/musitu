@@ -24,12 +24,26 @@ images = [f"{input_folder}/lipu-{i}.png" for i in range(133)]  # 0 to 132
 # Create PDF
 c = canvas.Canvas(output_pdf, pagesize=A4)
 
-for i, path in enumerate(images):
-    col = i % columns
-    row = (i // columns) % rows
-    page = i // images_per_page
+# Title page
+c.setFont("Helvetica-Bold", 20)
+c.drawCentredString(page_width / 2, page_height - 100, "musi Tu")
+c.setFont("Helvetica", 14)
 
-    if i % images_per_page == 0 and i != 0:
+lines = [
+    "tan: jan Pako en jan Tamalu en jan Simo en jan Mikali en jan pona ante mute",
+    "tenpo kulupu pi ma Elopa 2025","ma tomo Sapu"
+]
+
+for idx, line in enumerate(lines):
+    y = page_height - 150 - idx * 25
+    c.drawCentredString(page_width / 2, y, line)
+
+for i, path in enumerate(images):
+    col = (i+columns) % columns
+    row = ((i+columns) // columns) % rows
+    page = (i+columns) // images_per_page
+
+    if (i+columns) % images_per_page == 0 and i != 0:
         c.showPage()  # new page
 
     x = margin + col * spacing_x + (spacing_x - image_size) / 2

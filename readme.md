@@ -5,3 +5,4 @@ o awen, pali li lon :)
 
 ## wile
 - CairoSVG
+- reportlabs
