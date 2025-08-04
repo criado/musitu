@@ -176,6 +176,7 @@ nimi = [
 ####
 ]
 
+random.seed(124957831)
 random.shuffle(nimi)
 
 # lipu sin
