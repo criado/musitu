@@ -176,7 +176,7 @@ nimi = [
 ]
 
 # lipu sin
-canvas_size = 1000
+canvas_size = 850
 radius = 400
 center = canvas_size // 2
 
@@ -197,7 +197,7 @@ def o_sitelen_e_lipu(lipu, nanpa_lipu):
   octagon = []
 
   for i in range(8):
-      angle = math.tau * i / 8 - math.pi / 4  # rotate so a vertex is on top
+      angle = math.tau * i / 8 + math.pi/8 # rotate so a vertex is on top
       x = center + outer_radius * math.cos(angle)
       y = center + outer_radius * math.sin(angle)
       octagon.append((x, y))
@@ -249,8 +249,8 @@ def o_sitelen_e_lipu(lipu, nanpa_lipu):
 
         os.remove(png_path)  # clean temp file
   
-  sitelen_sike(360, lipu[:8])
-  sitelen_sike(160, lipu[8:], ante= math.tau/16)
+  sitelen_sike(360, lipu[:8], ante= math.tau/16)
+  sitelen_sike(160, lipu[8:])
 
   # save result
   canvas.save(f"pini/lipu-{nanpa_lipu}.png")
