@@ -3,6 +3,8 @@ from reportlab.pdfgen import canvas
 from PIL import Image
 import os
 
+import random
+
 # Settings
 output_pdf = "esun/musi Tu.pdf"
 input_folder = "pini"
@@ -20,6 +22,8 @@ image_size = min(spacing_x, spacing_y)  # leave small padding
 
 # Get list of image files
 images = [f"{input_folder}/lipu-{i}.png" for i in range(133)]  # 0 to 132
+random.seed(33)
+random.shuffle(images)
 
 # Create PDF
 c = canvas.Canvas(output_pdf, pagesize=A4)
