@@ -4,7 +4,7 @@ from PIL import Image
 import os
 
 # Settings
-output_pdf = "esun/output.pdf"
+output_pdf = "esun/musi Tu.pdf"
 input_folder = "pini"
 output_folder = "esun"
 os.makedirs(output_folder, exist_ok=True)
@@ -30,7 +30,7 @@ c.drawCentredString(page_width / 2, page_height - 100, "musi Tu")
 c.setFont("Helvetica", 14)
 
 lines = [
-    "tan: jan Pako en jan Tamalu en jan Simo en jan Mikali en jan pona ante mute",
+    "tan: jan Pako en jan Tamalu en jan pona ante mute",
     "tenpo kulupu pi ma Elopa 2025","ma tomo Sapu"
 ]
 
