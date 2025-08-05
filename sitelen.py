@@ -23,12 +23,12 @@ kule= [
 
 nimi = [
 ("tan", 0),
-("telo", 1),
+("pilin", 1),
 ("kasi", 2),
 ("taso", 3),
 ("tenpo", 4),
 ("toki", 5),
-("tomo", 6),
+("jo", 6),
 ### 
 ("loje", 0),
 ("laso", 1),
@@ -39,27 +39,27 @@ nimi = [
 ("pimeja", 6),
 ### 
 ("lupa", 0),
-("nena", 1),
-("soko", 2),
+("nena", 2),
+("luka", 1),
 ("meso", 3),
 ("misikeke", 4),
 ("monsuta", 5),
 ("kule", 6),
 ### 
-("pan", 0),
-("sama", 1),
+("tu", 0),
+("telo", 1),
 ("mi", 2),
 ("sina", 3),
 ("ona", 4),
-("pilin", 5),
-("pini", 6),
+("sama", 5),
+("kon", 6),
 ### 
 ("palisa", 0),
 ("nimi", 1),
 ("li", 2),
 ("lili", 3),
 ("suli", 4),
-("lanpan", 5),
+("pi", 5),
 ("walo", 6),
 ### 
 ("ike", 0),
@@ -110,10 +110,10 @@ nimi = [
 ("kalama", 5),
 ("suwi", 6),
 ### 
+("pan", 0),
 ("mute", 1),
-("tu", 0),
-("suno", 3),
 ("tonsi", 2),
+("suno", 3),
 ("sijelo", 4),
 ("selo", 5),
 ("supa", 6),
@@ -142,24 +142,25 @@ nimi = [
 ("ijo", 5),
 ("jaki", 6),
 ### 
-("jo", 0),
+
+("tomo", 0),
 ("ken", 1),
 ("kili", 2),
 ("kiwen", 3),
 ("ko", 4),
-("kon", 5),
+("pini", 5),
 ("kulupu", 6),
 ### 
 ("kute", 0),
-("lape", 1),
-("lawa", 2),
+("lawa", 1),
+("lape", 5),
 ("len", 3),
 ("lete", 4),
-("linja", 5),
-("pi", 6),
+("linja", 2),
+("lanpan", 6),
 ### 
 ("lon", 0),
-("luka", 1),
+("soko", 1),
 ("lukin", 2),
 ("ma", 3),
 ("mama", 4),
@@ -176,7 +177,9 @@ nimi = [
 ####
 ]
 
-random.seed(124957831)
+assert(len(nimi)==133)
+
+random.seed(1495183)
 random.shuffle(nimi)
 
 # lipu sin
@@ -188,6 +191,8 @@ def o_sitelen_e_lipu(lipu, nanpa_lipu):
   assert(len(lipu)==12)
   # pali e lipu sin
   canvas = Image.new("RGB", (canvas_size, canvas_size), (255, 255, 255, 0))
+
+  random.shuffle(lipu)
 
   from PIL import ImageDraw
 

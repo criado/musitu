@@ -34,6 +34,7 @@ c.drawCentredString(page_width / 2, page_height - 100, "musi Tu")
 c.setFont("Helvetica", 14)
 
 lines = [
+    "musi sama musi Dobble",
     "tan: jan Pako en jan Tamalu en jan pona ante mute",
     "tenpo kulupu pi ma Elopa 2025","ma tomo Sapu"
 ]
