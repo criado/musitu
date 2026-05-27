@@ -35,7 +35,7 @@ nimi = [
 ("alasa", 2),
 ("jelo", 3),
 ("oko", 4),
-("leko", 5),
+("kule", 5),
 ("pimeja", 6),
 ### 
 ("lupa", 0),
@@ -44,7 +44,7 @@ nimi = [
 ("meso", 3),
 ("misikeke", 4),
 ("monsuta", 5),
-("kule", 6),
+("leko", 6),
 ### 
 ("tu", 0),
 ("telo", 1),
@@ -76,14 +76,14 @@ nimi = [
 ("anpa", 3),
 ("sinpin", 4),
 ("monsi", 5),
-("wan", 6),
+("insa", 6),
 ### 
 ("ala", 0),
 ("en", 1),
 ("lipu", 2),
 ("sitelen", 3),
 ("sona", 4),
-("insa", 5),
+("wan", 5),
 ("utala", 6),
 ### 
 ("weka", 0),

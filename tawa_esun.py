@@ -6,7 +6,7 @@ import os
 import random
 
 # Settings
-output_pdf = "esun/musi Tu.pdf"
+output_pdf = "print_and_play.pdf"
 input_folder = "pini"
 output_folder = "esun"
 os.makedirs(output_folder, exist_ok=True)
@@ -35,7 +35,7 @@ c.setFont("Helvetica", 14)
 
 lines = [
     "musi sama musi Dobble",
-    "tan: jan Pako en jan Tamalu en jan pona ante mute",
+    "tan: jan Ele en jan Tamalu en jan pona ante mute",
     "tenpo kulupu pi ma Elopa 2025","ma tomo Sapu"
 ]
 
